@@ -38,7 +38,7 @@ def create_area_chart():
 
 #Streamlit App Layout
 st.title("💸 Dow Jones Price Analysis")
-st.markdown("###How has the Dow Jones stock price changed over time?")
+st.markdown("### How has the Dow Jones stock price changed over time?")
 
 #Initialize the session state variables
 if "selected_chart" not in st.session_state:
