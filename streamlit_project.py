@@ -67,3 +67,10 @@ if st.session_state.show_answer_button:
         end_time = time.time()
         time_taken = round(end_time-st.session_state.start_time, 2)
         st.success(f"You took {time_taken} seconds to answer the question!")
+
+#Reset Button
+if st.button("🔄 Reset App"):
+    st.session_state.selected_chart = None
+    st.session_state.start_time = 0
+    st.session_state.show_answer_button = False
+    st.rerun()  #Refresh the app to reset everything
